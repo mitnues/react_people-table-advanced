@@ -15,10 +15,10 @@ export const PeopleFilters = () => {
     const value = event.target.value;
     const updatedParams = new URLSearchParams(searchParams.toString());
 
-    if (value.trim()) {
-      updatedParams.set('query', value);
-    } else {
+    if (value === '') {
       updatedParams.delete('query');
+    } else {
+      updatedParams.set('query', value);
     }
 
     setSearchParams(updatedParams);

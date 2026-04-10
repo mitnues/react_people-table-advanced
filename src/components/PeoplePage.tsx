@@ -14,7 +14,7 @@ export const PeoplePage = () => {
   const [searchParams] = useSearchParams();
   const { slug } = useParams<{ slug?: string }>();
 
-  const query = searchParams.get('query')?.trim() ?? '';
+  const query = searchParams.get('query') ?? '';
   const centuries = searchParams.getAll('centuries');
   const sex = searchParams.get('sex');
   const sort = searchParams.get('sort');
