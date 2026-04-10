@@ -75,9 +75,13 @@ export const PeopleTable = ({ people, selectedPersonSlug }: Props) => {
           <th>
             <span className="is-flex is-flex-wrap-nowrap">
               Name
-              <SearchLink params={getNextSortParams(currentSort, currentOrder, 'name')}>
+              <SearchLink
+                params={getNextSortParams(currentSort, currentOrder, 'name')}
+              >
                 <span className="icon">
-                  <i className={`fas ${getSortIcon(currentSort, currentOrder, 'name')}`} />
+                  <i
+                    className={`fas ${getSortIcon(currentSort, currentOrder, 'name')}`}
+                  />
                 </span>
               </SearchLink>
             </span>
@@ -86,9 +90,13 @@ export const PeopleTable = ({ people, selectedPersonSlug }: Props) => {
           <th>
             <span className="is-flex is-flex-wrap-nowrap">
               Sex
-              <SearchLink params={getNextSortParams(currentSort, currentOrder, 'sex')}>
+              <SearchLink
+                params={getNextSortParams(currentSort, currentOrder, 'sex')}
+              >
                 <span className="icon">
-                  <i className={`fas ${getSortIcon(currentSort, currentOrder, 'sex')}`} />
+                  <i
+                    className={`fas ${getSortIcon(currentSort, currentOrder, 'sex')}`}
+                  />
                 </span>
               </SearchLink>
             </span>
@@ -97,9 +105,13 @@ export const PeopleTable = ({ people, selectedPersonSlug }: Props) => {
           <th>
             <span className="is-flex is-flex-wrap-nowrap">
               Born
-              <SearchLink params={getNextSortParams(currentSort, currentOrder, 'born')}>
+              <SearchLink
+                params={getNextSortParams(currentSort, currentOrder, 'born')}
+              >
                 <span className="icon">
-                  <i className={`fas ${getSortIcon(currentSort, currentOrder, 'born')}`} />
+                  <i
+                    className={`fas ${getSortIcon(currentSort, currentOrder, 'born')}`}
+                  />
                 </span>
               </SearchLink>
             </span>
@@ -108,9 +120,13 @@ export const PeopleTable = ({ people, selectedPersonSlug }: Props) => {
           <th>
             <span className="is-flex is-flex-wrap-nowrap">
               Died
-              <SearchLink params={getNextSortParams(currentSort, currentOrder, 'died')}>
+              <SearchLink
+                params={getNextSortParams(currentSort, currentOrder, 'died')}
+              >
                 <span className="icon">
-                  <i className={`fas ${getSortIcon(currentSort, currentOrder, 'died')}`} />
+                  <i
+                    className={`fas ${getSortIcon(currentSort, currentOrder, 'died')}`}
+                  />
                 </span>
               </SearchLink>
             </span>

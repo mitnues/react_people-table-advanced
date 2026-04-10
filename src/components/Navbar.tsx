@@ -17,7 +17,10 @@ export const Navbar = () => {
     >
       <div className="container">
         <div className="navbar-brand">
-          <Link className={`navbar-item ${isHome ? ACTIVE_NAV_CLASS : ''}`} to="/">
+          <Link
+            className={`navbar-item ${isHome ? ACTIVE_NAV_CLASS : ''}`}
+            to="/"
+          >
             Home
           </Link>
 

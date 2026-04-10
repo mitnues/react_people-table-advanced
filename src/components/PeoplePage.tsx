@@ -44,6 +44,7 @@ export const PeoplePage = () => {
 
       if (centuries.length > 0) {
         const personCentury = Math.ceil(person.born / 100).toString();
+
         if (!centuries.includes(personCentury)) {
           return false;
         }
@@ -51,9 +52,11 @@ export const PeoplePage = () => {
 
       if (query) {
         const normalizedQuery = query.toLowerCase();
-        const valuesToSearch = [person.name, person.motherName, person.fatherName].filter(
-          Boolean,
-        ) as string[];
+        const valuesToSearch = [
+          person.name,
+          person.motherName,
+          person.fatherName,
+        ].filter(Boolean) as string[];
 
         const matchesSearch = valuesToSearch.some(value =>
           value.toLowerCase().includes(normalizedQuery),

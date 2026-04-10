@@ -30,7 +30,9 @@ export const PeopleFilters = () => {
       ? selectedCenturies.filter(item => item !== century)
       : [...selectedCenturies, century];
 
-    return nextCenturies.length > 0 ? { centuries: nextCenturies } : { centuries: null };
+    return nextCenturies.length > 0
+      ? { centuries: nextCenturies }
+      : { centuries: null };
   };
 
   return (
@@ -109,7 +111,13 @@ export const PeopleFilters = () => {
       <div className="panel-block">
         <SearchLink
           className="button is-link is-outlined is-fullwidth"
-          params={{ sex: null, query: null, centuries: null, sort: null, order: null }}
+          params={{
+            sex: null,
+            query: null,
+            centuries: null,
+            sort: null,
+            order: null,
+          }}
         >
           Reset all filters
         </SearchLink>
